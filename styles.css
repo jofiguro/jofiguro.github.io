@@ -1,0 +1,36 @@
+body {
+    background-color: #98989c;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo { 
+    color: white;
+    margin-left: 100px;
+    line-height: 1;
+    font-size: 2rem;
+}
+
+.nav_bar {
+    border: 1px solid #e3e3e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    position: sticky;
+    padding: 18px;
+    border-radius: 40px;
+    box-shadow: 0px 2px 4px gray;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.nav-labels {
+    display: flex;
+    flex-direction: row;
+    margin-right: 60px;
+    gap: 60px;  
+}
