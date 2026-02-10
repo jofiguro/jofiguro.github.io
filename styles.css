@@ -1,6 +1,7 @@
 body {
     background-color: #98989c;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .flex-item a{
@@ -8,6 +9,37 @@ body {
     color: white;
 }
 
+#home {
+    min-height: 100vh;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 115px;
+}
+
+.home-text {
+    color: white;
+    flex-direction: column;
+    margin-left: -80px;
+}
+
+.home-h0 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0
+}
+
+.home-h1 {
+    font-size: 4.5rem;
+    margin: 0;
+}
+.home-h2 {
+    margin-top: 5px;
+    font-weight: 200;
+}
 .logo { 
     color: white;
     margin-left: 100px;
@@ -16,16 +48,21 @@ body {
 }
 
 .nav_bar {
-    border: 1px solid #e3e3e6;
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    position: sticky;
+    position: fixed;    
+    top: 20px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 18px;
+    border: 1px solid #e3e3e6;
     border-radius: 40px;
     box-shadow: 0px 2px 4px gray;
-    margin: auto;
-    margin-top: 16px;
+    background-color: rgba(227, 227, 230, 0.3);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 .nav-labels {
@@ -33,4 +70,20 @@ body {
     flex-direction: row;
     margin-right: 60px;
     gap: 60px;  
+}
+
+.profile-img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 4px solid #e3e3e6;
+    box-shadow: 0 15px 35px #00000015;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 45px #00000015;
 }
