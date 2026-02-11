@@ -80,6 +80,7 @@ body {
 .contact-item a {
     text-decoration: none;
     color: #98989c;
+    transition: transform 0.3s ease;
 }
 
 .contact-list {
@@ -107,7 +108,7 @@ body {
 }
 
 .flex-item a:hover, .logo:hover, .programming-img:hover, 
-.tool-img:hover, .project-card:hover {
+.tool-img:hover, .project-card:hover, .contact-item:hover {
     transform: scale(1.04);
     color: #ffffff;
     text-shadow:
@@ -157,6 +158,7 @@ body {
 }
 
 .logo { 
+    margin-left: 100px;
     cursor: default;
     line-height: 1;
     font-size: 2rem;
