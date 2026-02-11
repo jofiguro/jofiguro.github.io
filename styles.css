@@ -9,7 +9,11 @@ body {
     color: white;
 }
 
-.about-container, .projects-container {
+.contact-desc {
+    font-weight: 400;
+}
+
+.about-container, .projects-container, .contact-container {
     cursor: default;
     display: flex;
     justify-content: center;
@@ -27,6 +31,14 @@ body {
     box-shadow: 0px 2px 4px gray;
 }
 
+.contact-title {
+    width: 26%;
+    padding: 9px;
+    background-color: rgba(227, 227, 230, 0.3);
+    border: 1px solid #e3e3e6;
+    border-radius: 40px;
+    box-shadow: 0px 2px 4px gray;
+}
 .about-title {
     width: 25%;
     padding: 9px;
@@ -58,11 +70,15 @@ body {
         0 0 14px rgba(255, 255, 255, 0.4);
 }
 
-#about {
+#about, #contact {
     background-color: rgba(227, 227, 230, 0.3);
 }
 
-#home, #about, #projects, #contact {
+#contact {
+    min-height: 45dvh;
+    scroll-margin-top: 16vh;
+}
+#home, #about, #projects{
     min-height: 100dvh;
     scroll-margin-top: 16vh;
 }
@@ -188,7 +204,6 @@ body {
 .cards-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
     padding: 20px;    
 }
 
@@ -224,4 +239,26 @@ body {
     max-width: 350px;
     border-radius: 20px;
     object-fit: cover;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap: 40px;
+}
+
+.contact-item {
+    background-color: white;
+    padding: 6px;
+    width: 60%;
+    text-align: center;
+    border-radius: 15px;  
+    font-weight: 700;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #98989c;
 }
