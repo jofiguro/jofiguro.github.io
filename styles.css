@@ -9,13 +9,22 @@ body {
     color: white;
 }
 
-.about-container {
+.about-container, .projects-container {
     cursor: default;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
+}
+
+.projects-title {
+    width: 32%;
+    padding: 9px;
+    background-color: rgba(227, 227, 230, 0.3);
+    border: 1px solid #e3e3e6;
+    border-radius: 40px;
+    box-shadow: 0px 2px 4px gray;
 }
 
 .about-title {
@@ -27,7 +36,7 @@ body {
     box-shadow: 0px 2px 4px gray;
 }
 
-.about-bio {
+.about-bio, .project-card p {
     font-weight: 400;
     line-height: 1.6;
 }
@@ -39,7 +48,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-.flex-item a:hover, .logo:hover, .programming-img:hover, .tool-img:hover {
+.flex-item a:hover, .logo:hover, .programming-img:hover, .tool-img:hover, .project-card:hover {
     transform: scale(1.04);
     color: #ffffff;
     text-shadow:
@@ -53,7 +62,7 @@ body {
 }
 
 #home, #about, #projects, #contact {
-    min-height: 100vh;
+    min-height: 100dvh;
     scroll-margin-top: 16vh;
 }
 
@@ -84,6 +93,16 @@ body {
     font-size: 1.5rem;
     margin-top: 5px;
     font-weight: 200;
+}
+
+.home-email {
+    background-color: white;
+    padding: 6px;
+    width: 45%;
+    text-align: center;
+    border-radius: 15px;  
+    color: #98989c;
+    font-weight: 700;
 }
 .logo { 
     margin-left: 100px;
@@ -163,4 +182,45 @@ body {
 .programming-img, .tool-img {
     max-width: 60px;
     border-radius: 20%;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;    
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    max-width: 350px;
+    border: 1px solid #e3e3e6;
+    border-radius: 40px;
+    box-shadow: 0px 2px 4px gray;
+    background-color: rgba(227, 227, 230, 0.3);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+} 
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    width: 95%;
+    text-align: center;
+    border-radius: 15px;  
+    color: #98989c;
+    background-color: white;
+}
+
+.project-img {
+    width: 350px;
+    height: 350px;
+    max-width: 350px;
+    border-radius: 20px;
+    object-fit: cover;
 }
