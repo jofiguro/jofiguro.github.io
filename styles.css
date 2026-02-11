@@ -48,7 +48,8 @@ body {
     transition: transform 0.3s ease;
 }
 
-.flex-item a:hover, .logo:hover, .programming-img:hover, .tool-img:hover, .project-card:hover {
+.flex-item a:hover, .logo:hover, .programming-img:hover, 
+.tool-img:hover, .project-card:hover {
     transform: scale(1.04);
     color: #ffffff;
     text-shadow:
