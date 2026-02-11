@@ -54,7 +54,6 @@ body {
 
 #home, #about, #projects, #contact {
     min-height: 100vh;
-    margin-bottom: 6rem;
     scroll-margin-top: 16vh;
 }
 
